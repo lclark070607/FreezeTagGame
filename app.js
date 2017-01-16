@@ -9,23 +9,25 @@ let m = new Player('Morrighan');
 let b = new Player('Braeden');
 let o = new Player('Owen');
 
-function Team() {
+function Team(teamName) {
     //add players to a team
     this.add = function (playerN) {
         this.title = [];
         this.title.push(playerN);
+        this.title = teamName;
     };
     return this;
 };
 
-let c = new Team('Chasers');
-console.log(c);
+
+let c = new Team('Team Chasers');
 c.add(m);
 c.add(b);
+console.log(m);
 
-let r = new Team('Runners');
+let r = new Team('Team Runners');
 r.add(o);
-
+console.log(r);
 
 
 
