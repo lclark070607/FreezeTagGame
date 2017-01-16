@@ -19,18 +19,13 @@ function Team() {
 };
 
 let c = new Team('Chasers');
+console.log(c);
 c.add(m);
 c.add(b);
 
 let r = new Team('Runners');
 r.add(o);
 
-console.log(c);
-// console.log(r);
-
-console.log(m);
-console.log(b);
-console.log(o);
 
 
 
